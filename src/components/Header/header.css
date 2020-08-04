@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86%;
+  height: 2rem;
+  background-color: #009CD6;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  transition: .35s;
+}
+.header--fullWidth{
+  width: 100%;
+}
+.header__menu, .header__filter{
+  color: #ededed;
+  cursor: pointer;
+  transition: .25s;
+}
+.header__menu:hover, .header__filter:hover, .header__arrowLeft:hover{
+  color: #ef5145;
+}
+.header__arrowLeft{
+  margin-right: auto;
+  background-color: #162633;
+  color: #ededed;
+  cursor: pointer;
+  opacity: 1;
+  height: 2rem;
+  border-radius: 0 20px 20px 0;
+  transition: .25s;
+}
+.header__menu--invisible, .header__arrowLeft--invisible{
+  opacity: 0;
+  visibility: hidden;
+}

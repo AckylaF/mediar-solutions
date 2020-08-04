@@ -1,0 +1,12 @@
+.layout__background{
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  height: 100vh;
+  width: 82vw;
+  right: 0;
+  top: 2rem;
+  transition: .35s;
+}
+.layout__background--hidden{
+  width: 0;
+}

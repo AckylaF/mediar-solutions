@@ -1,0 +1,57 @@
+.funnel__container{
+  width: 48%;
+}
+.timeline__container{
+  width: 51%;
+}
+.funnel__title, .timeline__title, .kpi__title{
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+.funnel__container img, .timeline__container img{
+  width: 100%;
+}
+.timeline__categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(.5rem, 1fr));
+  grid-gap: .2rem;
+}
+.categories__item{
+  background-color: #ededed;
+  font-size: .6rem;
+  overflow: hidden;
+  padding: .2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #212529d2;
+}
+.timeline__message{
+  font-size: .9rem;
+  text-align: end;
+  margin: 1rem 0;
+  color: #21252980;
+}
+.timeline__metricsWarning{
+  font-size: .6rem;
+  font-weight: 500;
+}
+.kpi__container{
+  display: flex;
+  flex-direction: column;
+  transition: margin-top .25s;
+  width: 100%;
+}
+.kpi__metricTitle{
+  font-size: .8rem;
+  font-weight: 700;
+}
+.kpi__metricSelector{
+  border: 1px solid #212529;
+  border-radius: 4px;
+  width: 10%;
+  margin: .2rem 0;
+  cursor: pointer;
+}

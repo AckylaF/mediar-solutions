@@ -1,0 +1,83 @@
+.filters__container{
+  background-color: #162633;
+  padding: .5rem 2rem;
+  display: grid;
+  grid-template-columns: .5fr 2.5fr .5fr ;
+  grid-gap: 1rem;
+  opacity: 1;
+  transition: .25s;
+}
+.filters__container--hidden{
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.filters__datePicker{
+  background-color: #fff;
+  border-radius: 4px;
+  max-height: 3.5rem;
+  min-width: 6rem;
+}
+.filters__selectFilters{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  grid-gap: .8rem;
+  max-height: 3rem;
+  padding-top: .2rem;
+}
+.selectFilters__filter{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: .3rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.selectFilters__title{
+  font-size: .7rem;
+  font-weight: 700;
+}
+.selectFilters__filter select{
+  border: 1px solid #212529;
+  border-radius: 4px;
+  margin-top: .2rem;
+  cursor: pointer;
+}
+.filters__nav{
+  color: #fff;
+  padding-top: .5rem;
+}
+.nav__item{
+  border: 1px solid #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: .8rem;
+  padding: .2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .25s;
+}
+.nav__item:hover{
+  color: #ef5145;
+}
+
+
+ /* DATE PICKER RESET */
+
+.react-daterange-picker{
+  display: initial;
+}
+.react-daterange-picker__wrapper{
+  flex-direction: column;
+  height: 3.5rem;
+  border: none;
+}
+.react-daterange-picker__inputGroup:first-child{
+  border-bottom: 1px solid;
+}
+.react-daterange-picker__range-divider{
+  display: none;
+}
+.react-daterange-picker__button{
+  display: none;
+}
