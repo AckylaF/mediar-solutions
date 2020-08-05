@@ -15,10 +15,13 @@
 .header__menu, .header__filter{
   color: #ededed;
   cursor: pointer;
-  transition: .25s;
+  transition: .2s;
 }
-.header__menu:hover, .header__filter:hover, .header__arrowLeft:hover{
-  color: #ef5145;
+.header__menu:hover, .header__filter:hover{
+  transform: scale(1.1);
+}
+.header__arrowLeft:hover{
+  color: #ef5245 ;
 }
 .header__arrowLeft{
   margin-right: auto;

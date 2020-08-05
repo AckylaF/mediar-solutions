@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DateRangePicker from '@wojtekmaj/react-daterange-picker'
 
 import { Link } from 'react-router-dom';
@@ -9,6 +9,22 @@ import './filters.css'
 
 export default function Filters() {
   const [value, setValue] = useState([new Date(), new Date()])
+  const pages = ["/", "/conversion-funnel", "/store-heatmap", "/comparison-purchasing-mission", "/conversion-matrix", "/basket-correlation-analysis" ]
+  const [nextPage, setNextPage] = useState('')
+  const [lastPage, setLastPage] = useState('')
+
+
+  useEffect(() => {
+    const currentPage = String(window.location.pathname)
+
+    for (let i = 0; i < pages.length; i++) {
+      if(pages[i] === currentPage) {
+        setNextPage(pages[i + 1])
+        setLastPage(pages[i - 1])
+      }   
+    }
+
+  }, [pages])
 
   return (
     <div className="filters__container">
@@ -135,8 +151,8 @@ export default function Filters() {
       </ul>      
 
       <div className="filters__nav">
-        <ChevronLeft className="nav__item" />
-        <ChevronRight className="nav__item" />
+        <Link to={lastPage || "/basket-correlation-analysis"}><ChevronLeft className="nav__item" /></Link>
+        <Link to={nextPage || "/"}><ChevronRight className="nav__item" /></Link>
         <Link to="/"><Home className="nav__item" /></Link>
       </div>
     </div>
