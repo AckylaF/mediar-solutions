@@ -81,3 +81,11 @@
 .react-daterange-picker__button{
   display: none;
 }
+
+
+@media (max-width: 768px) {
+  .filters__container{
+    grid-template-rows: .5fr 2.5fr .5fr;
+    grid-template-columns: none;
+  }
+}

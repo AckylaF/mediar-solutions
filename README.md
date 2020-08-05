@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mediar Solutions.
 
-## Available Scripts
+No diretório do projeto, execute <em>yarn install</em> para instalar as dependências do projeto.<br> 
+Em seguida, execute <em>yarn start</em> para rodar o app em modo de desnvolvimento. <br> 
+A página estará disponível em [http://localhost:3000]<br>
 
-In the project directory, you can run:
+## Cores
 
-### `yarn start`
+Utilizei o azul[#162633] do nome da empresa no logo como base no menu lateral e na barra de filtros
+e um tom análogo[#009CD6] no cabeçalho. Nos efeitos de <i>hover</i> utilizei o vermelho[#EF5145].
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Funcionalidades
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Menu lateral retrátil<br>
+- Barra de filtros retrátil<br>
+- Navegação pelos painéis com os ícones da barra de filtros<br>
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As decisões de UX foram difíceis de serem tomadas, umas vez que não tenho informações dos usuários<br> 
+sobre quais problemas de usabilidade precisam ser solucionados.<br> 
+Com base apenas na imagem, imaginei que seria interessante ter mais espaço em tela para a visualização<br> dos gráficos, por isso fiz o menu lateral e os filtros retráteis.(clicando nos ícones de menu e filtro no cabeçalho)<br>
+O menu de páginas e do usuário estão concentrados no menu lateral e a navegação entre painéis pode ser<br> feita pelas setas posicionadas na barra de filtros. A proposta é deixar o máximo de espaço em tela possível<br> para a visualição dos gráficos. Achei a tela com informação demais, inicialmente pensei em<br> aumentar o espaço de cada gráfico, mas novamente, não tenho informações sobre o uso da plataforma e não sei,<br>por exemplo, se o usuário precisa ver os 3 gráficos ao mesmo tempo; na verdade, nem sequer sei se são<br> de fato 3 gráficos ou apenas representações diferentes da mesma informação.<br>
 
-### `yarn build`
+## Próximos passos
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Mobile: A página é responsiva mas não otimizada porque gostaria ter mais informações sobre usabilidade<br>
+para melhor desenvolver a experiência em dispositivos móveis. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
